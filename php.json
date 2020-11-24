@@ -1,0 +1,208 @@
+{
+	"Get field": {
+		"prefix": "acf_get_field",
+		"body": [
+			"get_field('');"
+		],
+		"description": "Returns the value of a specific field."
+    },
+    "Get field object": {
+		"prefix": "acf_get_field_obj",
+		"body": [
+			"get_field_object();"
+		],
+		"description": "Returns the settings of a specific field."
+    },
+    "Get field objects": {
+		"prefix": "acf_get_field_objs",
+		"body": [
+			"get_field_objects();"
+		],
+		"description": "Returns the settings of all fields saved on a specific post."
+    },
+    "Get fields": {
+		"prefix": "acf_get_fields",
+		"body": [
+			"get_fields();"
+		],
+		"description": "Returns an array of field values (name => value) for a specific post."
+    },
+	"The field": {
+		"prefix": "acf_the_field",
+		"body": [
+			"the_field('');"
+		],
+		"description": "Displays the value of a specific field."
+    },
+	"Repeater": {
+		"prefix": "acf_repeater",
+		"body": [
+			"if (have_rows('repeater_field_name')) :",
+			" while (have_rows('repeater_field_name')) : the_row();",
+			"endwhile;",
+			"endif;"
+		],
+		"description": "ACF repeater"
+    },
+    "Get row": {
+		"prefix": "acf_get_row",
+		"body": [
+			"get_row()"
+		],
+		"description": "Returns an array containing all values for the current row."
+    },
+    "Get row index": {
+		"prefix": "acf_get_row_index",
+		"body": [
+			"get_row()"
+		],
+		"description": "Returns the current row index within a have_rows() loop"
+    },
+    "Get row layout": {
+		"prefix": "acf_get_row_layout",
+		"body": [
+			"get_row_layout()"
+		],
+		"description": "Returns the current row layout name within a have_rows() loop"
+    },
+    "Get sub field": {
+		"prefix": "acf_get_sub_field",
+		"body": [
+			"get_sub_field()"
+		],
+		"description": "Returns the value of a specific sub field."
+    },
+    "Get sub field obj": {
+		"prefix": "acf_get_sbu_field_obj",
+		"body": [
+			"get_sub_field_object()"
+		],
+		"description": "Returns the settings of a specific sub field."
+    },
+    "Have rows": {
+		"prefix": "acf_have_rows",
+		"body": [
+			"have_rows()"
+		],
+		"description": "Used to loop through a parent field's value."
+    },
+    "The sub field": {
+		"prefix": "acf_the_sub_field",
+		"body": [
+			"the_sub_field()"
+		],
+		"description": "Displays the value of a specific sub field."
+    },
+    "Add row": {
+		"prefix": "acf_add_row",
+		"body": [
+			"add_row()"
+		],
+		"description": "Adds a new row of data to an existing Repeater or Flexible Content field value."
+    },
+    "Add sub row": {
+		"prefix": "acf_add_sub_row",
+		"body": [
+			"add_sub_row()"
+		],
+		"description": "Adds a new row of data to a Repeater or Flexible Content sub field value."
+    },
+    "Delete field": {
+		"prefix": "acf_delete_field",
+		"body": [
+			"delete_field()"
+		],
+		"description": "Deletes the value of a specific field."
+    },
+    "Delete row": {
+		"prefix": "acf_delete_row",
+		"body": [
+			"delete_row()"
+		],
+		"description": "Deletes a row of data from an existing Repeater or Flexible Content field value."
+    },
+    "Delete sub field": {
+		"prefix": "acf_delete_sub_field",
+		"body": [
+			"delete_sub_field()"
+		],
+		"description": "Deletes the value of a specific sub field."
+    },
+    "Delete sub row": {
+		"prefix": "acf_delete_sub_row",
+		"body": [
+			"delete_sub_row()"
+		],
+		"description": "Deletes a row of data from an existing Repeater or Flexible Content sub field value."
+    },
+    "Update field": {
+		"prefix": "acf_update_field",
+		"body": [
+			"update_field()"
+		],
+		"description": "Updates the value of a specific field."
+    },
+    "Update row": {
+		"prefix": "acf_update_row",
+		"body": [
+			"update_row()"
+		],
+		"description": "Updates a row of data for an existing Repeater or Flexible Content field value."
+    },
+    "Update sub field": {
+		"prefix": "acf_update_sub_field",
+		"body": [
+			"update_sub_field()"
+		],
+		"description": "Updates the value of a specific sub field."
+    },
+    "Update sub row": {
+		"prefix": "acf_update_sub_row",
+		"body": [
+			"update_sub_row()"
+		],
+		"description": "Updates a row of data for an existing Repeater or Flexible Content sub field value."
+    },
+    "Add options page": {
+		"prefix": "acf_add_options_page",
+		"body": [
+			"acf_add_options_page()"
+		],
+		"description": "Adds an options page to the admin menu."
+    },
+    "Add options sub page": {
+		"prefix": "acf_add_options_sub_page",
+		"body": [
+			"acf_add_options_sub_page()"
+		],
+		"description": "Add a global options sub page to the WordPress dashboard."
+    },
+    "Add form": {
+		"prefix": "acf_add_form",
+		"body": [
+			"acf_form()"
+		],
+		"description": "Creates a front end form."
+    },
+    "Add form head": {
+		"prefix": "acf_add_form_head",
+		"body": [
+			"acf_form_head()"
+		],
+		"description": "Validates and saves data submitted from an acf_form()."
+    },
+    "Register block type": {
+		"prefix": "acf_register_block_type",
+		"body": [
+			"acf_register_block_type()"
+		],
+		"description": "Registers a custom block type in the Gutenberg editor."
+    },
+    "Register form": {
+		"prefix": "acf_register_form",
+		"body": [
+			"acf_register_form()"
+		],
+		"description": "Registers a front end form."
+    }
+}
